@@ -1,0 +1,51 @@
+StructSimple struct {
+    a: int;
+    b: float;
+    c: int8;
+};
+
+StructComplex struct {
+    member: StructSimple;
+};
+
+StructForwardDeclare struct {
+    member: StructPostDeclare;
+};
+
+StructPostDeclare struct {
+    member: StructSimple;
+};
+
+i :: 1;
+j :: i;
+
+bool1 :: false;
+bool2 :: !bool1;
+
+main :: () void {
+    local_bitwise_not: uint = ~1u;
+    local_var: int = 1;
+    ++local_var;
+    --local_var;
+    
+    i :: 1;
+    j :: 2;
+    k :: i + 1;
+    l: int = i + j % k;
+
+    bool1 :: i == j && k == 3 || 1 == 2;
+    float1 :: 25f;
+    float2 :: 33f;
+    float3 :: float1 + float2 / float1 * float2;
+
+    local_condition_if:: true;
+    local_condition_else_if :: false;
+    if local_condition_if { 
+    } else if !local_condition_else_if {
+    } else {
+    }
+
+    for i: int = 0; i < 10; ++i { 
+        i:int = 0;
+    }
+};

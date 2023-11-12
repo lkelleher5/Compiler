@@ -1,0 +1,10 @@
+main :: () int {
+
+        var : int = 1;
+        i : int;
+        while i>var{
+           ++i;
+        }
+        return 0;
+};
+~ 

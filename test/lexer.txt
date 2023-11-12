@@ -1,0 +1,15 @@
+[ { ] } ]]}} ;;;
+& | && || ^ == != < > <= >= << >> + - * / %
+! ~
+= &= |= &&= ||= ^= <<= >>= += -= *= /= %=
+if else as
+'\n' '\r' '\t' '\0' '1' '2' 'a' 
+"bruh\n\t\r\"\'" 
+"normal_string"
+identifier another_identifier identifier_with_numbers_0123456789
+0 100 129909 400
+0.0 0.01 0.902300 12001.1903
+6i8 6i16 6i 6i64
+7u8 7u16 7u 7u64
+8f 8.0f 8.f 8f64 8.0f64 8.f64
+false true

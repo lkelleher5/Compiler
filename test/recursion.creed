@@ -1,0 +1,23 @@
+count : int = 0;
+
+recursive_function :: (depth : int) void{
+        depth : int;
+        if (depth > 1000) {
+                return 0;
+}
+
+
+        ++count;
+        recursive_function(depth + 1);
+
+
+};
+
+main :: () int {
+
+        recursive_function(0);
+
+        return 0;
+
+};
+~  

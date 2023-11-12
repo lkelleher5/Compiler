@@ -1,0 +1,96 @@
+{
+    a: int;
+    a: int = 1;
+    a :: 1;
+
+    func :: () void {
+        i: int = 0;
+        z: float = 0;
+        for j: int = 0; j < 10; ++j {
+            println("Loop");
+        }
+    };
+   
+    array_map(array, (i: int) int return i * 2;); // Lambdas
+    array_map(array, (i: int) int { return i * 2; });
+    
+    Struct1 struct {
+        a: int;
+        b: bool;
+        c: SomeOtherComplexType;
+    };
+    
+    Union1 union {
+        x: int;
+        y: float64;
+        z: bool;
+        w: SomeOtherComplexType;
+    };
+    
+    Enum1 enum {
+        ENUM_1;
+        ENUM_2;
+        ENUM_3;
+    };
+    
+    Sum1 sum {
+        VAL_1: int;
+        VAL_2;
+        VAL_3: SomeOtherComplexType;
+    };
+
+
+    j: bool = false;
+    
+    for i: int = 0; i < 0; p: int = 0 {
+        z: int = 0;
+    }
+    
+    for element in array {
+        ++&element;
+    }
+
+    // for element in array i += func(element);
+
+    match x {
+    | Test1 -> 
+        var1: int = 1;
+        var2: int = 3;
+    | Test2 -> 
+        var2: int = 2;
+        for i: int = 0; i < 0; ++i {
+            ++var2;
+            var2 += 2;
+        }
+    | Test3 ->
+    | Test5 -> 
+        var4 : int = 4;
+    }
+
+    while i > 0 {
+    
+    }
+    
+    ++i;
+    --j;
+    ++&func(1, 2, 3);
+    1;
+    function_call(a, b, c);
+    
+    if a b;
+    else c;
+    if a { }
+    if a > 0 { } else { }
+    if a > 0 { } else if a < 0 { } else { }  
+    func1: () void;
+    func2: (i: int) void;
+    func3: (a: int, b: int) void;
+    func4: (a: int, f: () void) int;
+    func5: (a: int, f: () void) (b: int) (j: int) void;
+    label label_name;
+    goto label_name;
+    return a + b;
+    return;
+
+    return 0;
+} 

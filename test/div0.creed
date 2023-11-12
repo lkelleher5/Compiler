@@ -1,0 +1,7 @@
+main :: () int {
+        var : int;
+        x : int;
+        x = var/0;
+        return x;
+};
+

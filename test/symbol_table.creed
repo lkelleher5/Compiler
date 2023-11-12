@@ -1,0 +1,19 @@
+func (count: int) void {
+    for j: int = 0; j < count; ++j {
+
+    }
+}
+
+Person struct {
+    id: int;
+    age: int;
+    salary: int64;
+}
+
+person_new(salary: int64) Person {
+
+}
+
+person_use (person: Person) void {
+    person2: Person;
+}
